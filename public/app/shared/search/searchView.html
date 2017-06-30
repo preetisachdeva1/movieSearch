@@ -1,0 +1,12 @@
+<div class="search-pic">
+    <input class="textbox" type="text" ng-model="movie.keyword" ng-change="movie.searchMovies()" placeholder="search movie..."/>
+    <div id="list-wrapper" >
+        <div  data-ng-if="movie.movieNoFound" class="padding-10">Movie not found</div>
+        <div ng-hide="movie.movieNoFound" infinite-scroll='movie.loadMore()'  infinite-scroll-container="'#list-wrapper'">
+            <div  class="search-movie" ng-repeat="photos in movie.listOfMovie track by $index">
+                <a ng-href="#!movie/{{photos.imdbID}}">{{photos.Title}}</a>
+            </div>  
+            <img  class="padding-10" data-ng-if="movie.showLoader" src="assests/images/load-more.gif">
+        </div>
+    </div>
+</div>

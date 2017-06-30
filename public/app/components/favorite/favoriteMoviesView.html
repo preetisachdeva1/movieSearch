@@ -1,0 +1,14 @@
+<div class="container margin_2_top">
+    <h4>Favorites</h4>
+    <div class="row link" ng-repeat="items in fm.favroteMovies track by $index">
+        <a ng-href="#!movie/{{items.imdbID}}">
+            <div class="col-md-3">
+                <img ng-if="items.Poster != 'N/A'" ng-src="{{items.Poster}}" width="140" align="left">
+                <img ng-if="items.Poster == 'N/A'" src="assests/images/default.png" width="140" align="left">
+            </div>
+            <div class="col-md-4">{{items.Title}}</div>
+            <div class="col-md-4">{{items.Actors}} </div>
+            <div class="col-md-1"> <span class="text-warning" ng-click="fm.deleteFavorite(items.imdbID)">Delete</span></div>
+        </a>
+    </div>
+</div>

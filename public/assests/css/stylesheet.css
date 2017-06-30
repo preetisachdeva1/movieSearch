@@ -1,0 +1,128 @@
+body{
+  background-color: #f1ecec;
+}
+.search-pic {
+  margin-left: 26%;
+  position: fixed;
+  margin-top: 1%;
+  z-index: 999;
+}
+.textbox {
+  width: 600px;
+  padding: 15px 25px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #9D9E9E;
+  text-shadow: 1px 1px 0 #FFF;
+  background: #FFF;
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.50);
+  -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.50);
+  height: 44px;
+}
+.textbox:focus {
+  background: #fff;
+  color: #414848;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.25);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25);
+  outline: 0;
+}
+.textbox:hover {
+  background: #fff;
+  color: #414848;
+}
+h1{   
+  margin-left: 25%;
+}
+img.show-pic{
+  margin-top: 2%;
+  margin-left: 0%;
+  border: 2px solid #CCB;
+}
+.cover-image {
+  width: 464px;
+  background-color: #ccc;
+}
+.main{
+overflow: scroll;
+width: 469px;
+height: 440px;
+background-color: #ededf3;
+}
+/* modal open */
+#list-wrapper{
+  max-height: 486px;
+  overflow-y: scroll;
+  border: solid 1px #CCB;
+  background-color: #f3f3f3;
+}
+.text-align-center {
+  text-align: center;
+}
+h1{
+  margin-left: 25%;
+  color: darkred;
+  font-size: 39px;
+}
+h4{
+  color: #9a2323;
+  padding: 3px 9px;
+  border-bottom: 1px solid lightgrey;
+}
+#last-child{border-bottom:none;}
+.margin-left-40{
+  margin-left: 40px;
+}
+.margin-bottom-7{
+  margin-bottom: 7px;
+}
+.padding-10 {
+  padding: 10px;
+}
+
+.link{
+  border-bottom: 1px solid #ccc;
+  color: #080808;
+  text-decoration: none;
+  background-color: none;
+  margin-bottom: 24px;
+  font-size: 17px;
+}
+.row img{
+  margin-bottom: 12px;
+}
+.link a{
+  color:#9e5f5f ; 
+}
+#home-img{
+  float: left;
+}
+.search-movie{
+  height: 23px;
+  padding: 13px;
+}
+.search-movie a{
+  height: 101px;
+  color:#9e5f5f; 
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+#list-wrapper{
+  max-height: 228px;
+  overflow-y: scroll;
+  border: solid 1px #CCB
+}
+.margin_10_top{
+  margin-top: 10%;
+}
+.margin_2_top{
+  margin-top: 2%;
+}
+.loader {
+  width:194px;margin: 10% 0 0 38%;
+}

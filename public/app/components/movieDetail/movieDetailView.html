@@ -1,0 +1,53 @@
+<search-movie></search-movie>
+<div class="container">
+    <img  data-ng-show="vm.showMovieDetail" src="assests/images/loader.gif" class="loader">
+    <div data-ng-hide="vm.showMovieDetai" class=" margin_10_top">
+        <div class="col-md-4">
+            <img ng-if="vm.movieDetail.Poster != 'N/A'" ng-src="{{vm.movieDetail.Poster}}" width="256">
+            <img ng-if="vm.movieDetail.Poster == 'N/A'" src="assests/images/default.png"  width="256">
+        </div>
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-md-8"> 
+                    <h4 ng-bind=vm.movieDetail.Title></h4>
+                </div>
+                <div>
+                <img ng-src="{{vm.favShow == true && 'assests/images/fav1.png' || 'assests/images/fav.png'}}"  width="31px"
+                        ng-click="vm.setFavorite(vm.movieDetail)"//>
+                </div>
+            </div>
+           <div class="row">
+                <div class="col-md-2"><b>Director</b></div>
+                <div class="col-md-10" ng-bind=vm.movieDetail.Director></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><b>Released</b></div>
+                <div class="col-md-10" ng-bind=vm.movieDetail.Released></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><b>Plot</b></div>
+                <div class="col-md-10" ng-bind=vm.movieDetail.Plot></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><b>Plot</b></div>
+                <div class="col-md-10" ng-bind=vm.movieDetail.Plot></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><b>Actors</b></div>
+                <div class="col-md-10" ng-bind=vm.movieDetail.Actors></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><b>Writer</b></div>
+                <div class="col-md-10" ng-bind=vm.movieDetail.Writer></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><b>Website</b></div>
+                <div class="col-md-10" ng-bind=vm.movieDetail.Website></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><b>Rating</b></div>
+                <div class="col-md-10" ng-bind=vm.movieDetail.imdbRating></div>
+            </div>
+         </div>
+    </div>
+</div>
